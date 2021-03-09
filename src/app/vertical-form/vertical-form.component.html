@@ -1,0 +1,28 @@
+<div class="container-fluid" style="overflow-x: hidden">
+  <div class="row">
+    <div class="timeline" style="margin-left: -153px">
+      <div class="" *ngFor="let items of userItems">
+        <div class="container left">
+          <div class="content">
+            <h2 class="text-left">
+              {{ items.item_left.date }}
+            </h2>
+            <p>
+              {{ items.item_left.componentInstall }}
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2 class="text-right">
+              {{ items.item_right.date }}
+            </h2>
+            <p>
+              {{ items.item_right.componentInstall }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

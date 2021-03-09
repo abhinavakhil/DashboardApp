@@ -1,0 +1,26 @@
+<div class="container d-flex align-items-center">
+  <div class="row container-row">
+    <form [formGroup]="orderForm" style="margin-top: 40%">
+      <h3 style="color: #fff">Welcome to order tracking</h3>
+
+      <div class="form-wrapper">
+        <h4 class="text-main">Order Number</h4>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter Order Number"
+          style="margin-bottom: 15px"
+          formControlName="orderNumber"
+        />
+
+        <button
+          type="button"
+          class="btn submitButton"
+          (click)="getorderNumber()"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
