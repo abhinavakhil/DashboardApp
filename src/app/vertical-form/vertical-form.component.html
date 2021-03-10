@@ -4,19 +4,22 @@
       <div class="" *ngFor="let items of userItems">
         <div class="container left">
           <div class="content">
-            <h2 class="text-left">
+            <h4 class="text-left">
               {{ items.item_left.date }}
-            </h2>
+            </h4>
             <p>
               {{ items.item_left.componentInstall }}
+            </p>
+            <p>
+              {{ items.item_left.install }}
             </p>
           </div>
         </div>
         <div class="container right">
           <div class="content">
-            <h2 class="text-right">
+            <h4 class="text-right">
               {{ items.item_right.date }}
-            </h2>
+            </h4>
             <p>
               {{ items.item_right.componentInstall }}
             </p>

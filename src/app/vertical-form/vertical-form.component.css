@@ -8,12 +8,12 @@
 .timeline::after {
   content: '';
   position: absolute;
-  width: 6px;
+  width: 4px;
   background-color: white;
   top: 0;
   bottom: 0;
   left: 74%;
-  margin-left: -3px;
+  margin-left: -4px;
 }
 
 .container {
@@ -83,7 +83,8 @@
 
 
 .content {
-  padding: 20px 30px;
+  /* padding: 20px 30px; */
+  padding: 2px 16px;
   background-color: white;
   position: relative;
   border-radius: 6px;
@@ -122,24 +123,39 @@
   }
 }
 
+p{
+  font-size: 15px;
+  margin-bottom: -2px;
+}
+
+h4{
+  font-size: 16px;
+}
+
 
 @keyframes crescendo {
-  0%   {transform: scale(.8);}
-  100% {transform: scale(1.5);}
+  /* 0%   {transform: scale(.8);}
+  100% {transform: scale(1.5);} */
+  0%   {transform: scale(.5);}
+  100% {transform: scale(1);}
 }
 
 .text-left{
   background: red;
-  margin-left: -29px;
-  width: 188px;
-  text-align: center;
-  margin-top: -19px;
+  margin-left: -16px;
+  width: 83px;
+  text-align: left;
+  margin-top: -2px;
+  border-top-left-radius: 7px;
+  outline: none;
 }
 
 .text-right{
   background: red;
-  margin-right: -29px;
-  margin-left: 50px;
-  text-align: center;
-  margin-top: -20px;
+  margin-right: -16px;
+  margin-top: -2px;
+  text-align: right;
+  border-top-right-radius: 6px;
+  outline: none;
+  margin-left: 115px;
 }

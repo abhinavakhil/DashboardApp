@@ -22,7 +22,7 @@ export class VerticalFormComponent implements OnInit {
         "install":"6",
         "deinstall":"6",
         "id": 6,
-        "componentInstall": "5",
+        "componentInstall": "6",
         "componentDeInstall": "14",
         "site_move":"3"
      },
