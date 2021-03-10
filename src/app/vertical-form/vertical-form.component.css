@@ -150,12 +150,10 @@ h4{
   outline: none;
 }
 
-.text-right{
+.text-right2{
   background: red;
-  margin-right: -16px;
-  margin-top: -2px;
-  text-align: right;
   border-top-right-radius: 6px;
   outline: none;
-  margin-left: 115px;
+  margin-right: -16px;
+  display: inline-block;
 }
