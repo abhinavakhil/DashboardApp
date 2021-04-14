@@ -1,0 +1,40 @@
+
+<div class="container-fluid" style="overflow-x: hidden">
+  
+  <div class="row">
+  
+    <div class="timeline" style="margin-left: -153px">
+      <div class="" *ngFor="let items of userItems">
+        <div class="container left">
+          <div class="content">
+          
+            <h4 class="text-left">
+             <b> {{ items.item_left.date }}</b>
+            </h4>
+            <p><b>
+              <span>Install : </span>{{ items.item_left.install }}</b>
+            </p>
+            <p>
+              <b><span>De Install : </span>{{ items.item_left.deinstall }}</b>
+            </p>
+            <p>
+              <b><span>Component Install : </span>{{ items.item_left.componentInstall }}</b>
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <div style="text-align: right; margin-top: -4px">
+              <h4 class="text-right2 ml-auto">
+                <b>{{ items.item_right.date }} </b>
+              </h4>
+            </div>
+            <p>
+              <b><span>Site_Mov : </span>{{ items.item_right.install }}</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

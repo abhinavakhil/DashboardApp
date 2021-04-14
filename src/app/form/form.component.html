@@ -1,0 +1,26 @@
+<div class="container d-flex align-items-center">
+  <div class="row container-row">
+    <form [formGroup]="orderForm" style="margin-top: 40%">
+      <h4 style="color: #fff">Welcome to Dell Technologies!</h4>
+
+      <div class="form-wrapper">
+        <h5 class="text-main">Serial Number / Service Tag</h5>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="eg. 23490AFX5"
+          style="margin-bottom: 40px"
+          formControlName="orderNumber"
+        />
+
+        <button
+          type="button"
+          class="btn submitButton"
+          (click)="getorderNumber()"
+        >
+          SUBMIT
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
