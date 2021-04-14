@@ -91,7 +91,7 @@
      , #579ee6, #1f69b3 );
   position: relative;
   border-radius: 6px;
-  
+
 }
 
 
@@ -162,4 +162,23 @@ h4{
   margin-right: -16px;
   width: 90px;
   display: inline-block;
+}
+
+.item-left{
+  position: fixed;
+  left: 390px;
+  top: 50%;
+}
+
+.item-text{
+  font-size: 14px;
+  color: #fff;
+}
+
+.vertical-line{
+  border-left: 3px solid #fff;
+  height: 120px;
+  position: absolute;
+  top: 0px;
+  left: 270px;
 }

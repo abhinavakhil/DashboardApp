@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-vertical-form',
@@ -8,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VerticalFormComponent implements OnInit {
 
-  constructor(private http:HttpClient) { }
+  @Input('searchedterm') searchedterm: any;
+
+  userItemArray:any;
+
+  constructor(private http:HttpClient) {
+
+  }
 
   ngOnInit(): void {
-    this.getPostsData();
+    //this.getPostsData();
+    console.log(this.searchedterm);
   }
 
 
@@ -98,15 +105,23 @@ export class VerticalFormComponent implements OnInit {
     }
  ]
 
- getPostsData(){
-  fetch('https://jsonplaceholder.typicode.com/todos/1')
-  .then(response => response.json())
-  .then(json => console.log(json))
-  // http method
-  //  return this.http.get("url").subscribe(res=>{
-  //    console.log(res);
-  //  });
+ getPostsData(searchterm: any){
+   return this.http.get(`localhost:8080/aggregation/${searchterm}`).subscribe(res=>{
+     const itemArray = Object.entries(res);
+     const item_left = itemArray.filter((el,i)=> i%2 == 0);
+     const item_right = itemArray.filter((el,i) => i%2 == 1);
+
+     this.userItemArray =  [{item_left: item_left}, {item_right: item_right}];
+     console.log(this.userItemArray);
+   });
  }
+
+ ngOnChanges(changes: SimpleChanges) {
+  if (changes['searchedterm']) {
+     console.log(this.searchedterm);
+
+  }
+}
 
 
 

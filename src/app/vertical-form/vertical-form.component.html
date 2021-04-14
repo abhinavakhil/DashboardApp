@@ -1,24 +1,34 @@
-
 <div class="container-fluid" style="overflow-x: hidden">
-  
   <div class="row">
-  
+    <div class="item-left">
+      <h2 class="item-text">SVG_TAG: X33890</h2>
+      <h2 class="item-text">ENTITY VALUE: 1178890</h2>
+      <h2 class="item-text">SOURCE_SITE_ID: 6</h2>
+      <h2 class="item-text">ASSET CREATION DATE: 22 JAN 2021</h2>
+      <h2 class="item-text">SERIAL NUMBER: 1233890123</h2>
+      <div class="vertical-line"></div>
+    </div>
+  </div>
+
+  <div class="row">
     <div class="timeline" style="margin-left: -153px">
       <div class="" *ngFor="let items of userItems">
         <div class="container left">
           <div class="content">
-          
             <h4 class="text-left">
-             <b> {{ items.item_left.date }}</b>
+              <b> {{ items.item_left.date }}</b>
             </h4>
-            <p><b>
-              <span>Install : </span>{{ items.item_left.install }}</b>
+            <p>
+              <b> <span>Install : </span>{{ items.item_left.install }}</b>
             </p>
             <p>
               <b><span>De Install : </span>{{ items.item_left.deinstall }}</b>
             </p>
             <p>
-              <b><span>Component Install : </span>{{ items.item_left.componentInstall }}</b>
+              <b
+                ><span>Component Install : </span
+                >{{ items.item_left.componentInstall }}</b
+              >
             </p>
           </div>
         </div>

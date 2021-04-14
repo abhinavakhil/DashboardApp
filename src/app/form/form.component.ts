@@ -10,6 +10,8 @@ export class FormComponent implements OnInit {
 
   orderForm: FormGroup = new FormGroup({});
 
+  searchedValue: any;
+
   constructor(private _fb: FormBuilder) { }
 
   ngOnInit(): void {
@@ -20,6 +22,7 @@ export class FormComponent implements OnInit {
 
   getorderNumber(){
     console.log(this.orderForm.value);
+    this.searchedValue = this.orderForm.value;
   }
 
 }
